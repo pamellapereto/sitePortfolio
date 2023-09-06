@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  padding: 25px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+#menu a {
+  color: rgb(255, 255, 255);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  flex-direction: row;
+  margin: 19px;
+  text-transform: uppercase;
+}
+
+#menu a:hover {
+  color: rgb(188, 90, 198);
+}
+
+header {
+  background: linear-gradient(
+    90deg,
+    rgba(117, 41, 165, 1) 0%,
+    rgba(8, 0, 43, 1) 76%
+  );
+  padding-bottom: 60px;
+}
+
+.apresentacao {
+  display: flex;
+}
+
+h1 {
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 180%;
+}
+
+span {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.right {
+  flex: 5;
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.left {
+  flex: 5;
+  text-align: center;
+}
+
+.btn {
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btnContact {
+  background: rgb(188, 90, 198);
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+.btnContact:hover {
+  background: rgb(68, 21, 185);
+  color: rgb(255, 255, 255);
+}
+
+.containerServicos {
+  background: rgb(238, 230, 255);
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.itemServico1, .itemServico3, .itemServico6, .itemServico8 {
+  border: 1px solid rgb(115, 10, 134);
+  border-radius: 5px;
+  margin: 15px;
+  padding: 25px 10px;
+  text-align: center;
+  width: 20%;
+}
+
+.itemServico2, .itemServico4, .itemServico5, .itemServico7 {
+  border: 1px solid rgb(70, 100, 190);
+  border-radius: 5px;
+  margin: 15px;
+  padding: 25px 10px;
+  text-align: center;
+  width: 20%;
+}
+
+.containerServicos h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+}
+
+.containerServicos img {
+  width: 60px;
+}
+
+.itemServico1:hover, .itemServico3:hover, .itemServico6:hover, .itemServico8:hover {
+  background: rgb(252, 224, 255);
+  cursor: pointer;
+}
+
+.itemServico2:hover, .itemServico4:hover, .itemServico5:hover, .itemServico7:hover {
+  background: rgb(214, 224, 255);
+  cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    background: rgb(238, 230, 255);
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
