@@ -8,11 +8,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 
     <title>Soluções em TI</title>
+
+    <!-- Inclusão do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
 
 </head>
 
@@ -24,23 +27,56 @@
         @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap");
     </style>
 
-    <header>
 
-        <nav>
+
+
+
+    <!-- Início do menu -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menuDegrade" id="navbarNav">
+                <ul class="navbar-nav" id="menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremim">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Soluções em TI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--<nav>
             <ul id="menu">
 
-                <li><a href="#"> Início </a></li>
-                <li><a href="sobremim.html"> Sobre mim </a></li>
-                <li><a href="#servicos"> Soluções em TI </a></li>
-                <li><a href="contato.html"> Contato </a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobremim">Sobre mim</a></li>
+                <li><a href="#servicos">Soluções em TI</a></li>
+                <li><a href="#contato">Contato</a></li>
 
             </ul>
 
-        </nav>
+        </nav> -->
+    <!-- Fim do menu -->
+    <header>
+        <!-- Início da seção de apresentação -->
         <div class="apresentacao">
 
             <div class="left">
-                <img src="img/background.png" width="40%" alt="imagem com notebook">
+                <img src="img/background.png" width="42%" alt="imagem com notebook">
             </div>
 
 
@@ -51,15 +87,95 @@
 
 
                 <div>
-                    <button class="btn btnContact">Entre em contato</button>
+                    <a href="#contato">
+                        <button class="btn btnContact">Entre em contato</button>
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- Fim da seção de apresentação -->
     </header>
+
+    <!-- Início da seção sobre mim -->
+    <section id="sobremim">
+
+        <h3>Sobre mim</h3>
+        <div class="containerSobreMim">
+
+            <div class="left">
+                <h2>Pamella Pereto</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quae iusto officia quasi.
+                    Dignissimos
+                    itaque iusto delectus voluptatibus amet voluptatum facere. Eos quasi neque cupiditate deserunt
+                </p>
+            </div>
+
+            <div class="right">
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="https://api.whatsapp.com/send?phone=5511964556220" target="_blank">
+                            <img src="img/redesSociais/whatsapp.png">
+                    </div>
+
+                    <div>
+                        <p>(11) 96455-6220</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="https://github.com/pamellapereto" target="_blank">
+                            <img src="img/redesSociais/github.png">
+                    </div>
+
+                    <div>
+                        <p>github.com/pamellapereto</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="https://www.linkedin.com/in/pamellapereto/" target="_blank">
+                            <img src="img/redesSociais/linkedin.png">
+                    </div>
+
+                    <div>
+                        <p>linkedin.com/in/pamellapereto</p>
+
+                    </div>
+                    </a>
+                </div>
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="mailto:pamellapereto@conexaodev.com">
+                            <img src="img/redesSociais/gmail.png">
+                    </div>
+
+                    <div>
+                        <p>pamellapereto@conexaodev.com</p>
+                    </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Fim da seção sobre mim -->
 
 
 
     <section id="servicos">
+
+        <!-- Início da seção de serviços em redes de computadores -->
         <h3>Assistência em redes de computadores</h3>
         <div class="containerServicos">
 
@@ -91,10 +207,11 @@
 
         </div>
 
+        <!-- Fim da seção de serviços em redes de computadores -->
 
-
+        <!-- Início da seção de serviços em desenvolvimento -->
         <h3>Desenvolvimento e implementação de aplicativos</h3>
-        <div class="containerServicos">
+        <div class="containerServicos d-flex">
 
             <div class="itemServico5">
                 <img src="img/prototipacao/96px.png">
@@ -121,12 +238,68 @@
 
         </div>
 
+        <!-- Fim da seção de serviços em desenvolvimento -->
+
     </section>
 
+    <!-- Início da seção contato -->
+    <section id="contato">
+
+        <div class="containerContato">
+
+            <form name="formularioContato">
+                <h2>Entre em contato</h2>
+
+                <div class="displayContato">
+
+                    <div class="dados">
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="idNome" placeholder="Digite seu nome" required="required" name="nome" />
+                        <br>
+
+                        <label for="celular">Celular: </label>
+                        <input type="tel" id="idFone" placeholder="(99) 99999-9999" name="celular" />
+                        <br>
+
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="idEmail" placeholder="seuemail@mail.com" name="email" />
+                    </div>
+
+                    <div class="mensagem">
+                        <label>Deixe sua mensagem: </label>
+                        <textarea></textarea>
+                        <br>
+
+                        <input type="submit" class="enviar" onclick="enviarMensagem();" value="Enviar mensagem" />
+                    </div>
+
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8065064986695!2d-46.70641572448957!3d-23.647099564748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50f8ac76dfdb%3A0xc160a87f059ec93d!2sSenac%20Largo%20Treze!5e0!3m2!1spt-BR!2sbr!4v1695048263368!5m2!1spt-BR!2sbr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <!-- Fim da seção contato -->
+
+
+
+    <!-- Início do rodapé -->
     <footer>
 
 
     </footer>
+    <!-- Fim do rodapé -->
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

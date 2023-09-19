@@ -4,18 +4,18 @@
   box-sizing: border-box;
 }
 
-#menu {
+/*#menu { 
   display: flex;
   list-style: none;
   padding: 25px;
   justify-content: center;
   margin-bottom: 25px;
-}
+}*/
 
 #menu a {
   color: rgb(255, 255, 255);
   font-family: "Nunito Sans", sans-serif;
-  font-size: 15px;
+  font-size: 19px;
   text-decoration: none;
   flex-direction: row;
   margin: 19px;
@@ -40,14 +40,14 @@ header {
 }
 
 h1 {
-  font-size: 23px;
+  font-size: 27px;
   color: rgb(255, 255, 255);
   font-family: "Nunito Sans", sans-serif;
   line-height: 180%;
 }
 
 span {
-  font-size: 25px;
+  font-size: 26px;
   color: rgb(255, 255, 255);
   font-family: "Nunito Sans", sans-serif;
 }
@@ -72,7 +72,7 @@ span {
   font-family: "Josefin Sans", sans-serif;
   padding: 6px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .btnContact {
@@ -91,9 +91,13 @@ span {
   display: flex;
   justify-content: center;
   padding: 25px;
+  margin-top: -8px;
 }
 
-.itemServico1, .itemServico3, .itemServico6, .itemServico8 {
+.itemServico1,
+.itemServico3,
+.itemServico6,
+.itemServico8 {
   border: 1px solid rgb(115, 10, 134);
   border-radius: 5px;
   margin: 15px;
@@ -102,7 +106,10 @@ span {
   width: 20%;
 }
 
-.itemServico2, .itemServico4, .itemServico5, .itemServico7 {
+.itemServico2,
+.itemServico4,
+.itemServico5,
+.itemServico7 {
   border: 1px solid rgb(70, 100, 190);
   border-radius: 5px;
   margin: 15px;
@@ -113,7 +120,7 @@ span {
 
 .containerServicos h2 {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 17px;
+  font-size: 21px;
   color: rgb(0, 0, 0);
 }
 
@@ -121,28 +128,175 @@ span {
   width: 60px;
 }
 
-.itemServico1:hover, .itemServico3:hover, .itemServico6:hover, .itemServico8:hover {
-  background: rgb(252, 224, 255);
+.itemServico1:hover,
+.itemServico3:hover,
+.itemServico6:hover,
+.itemServico8:hover {
+  background: rgb(252, 234, 255);
   cursor: pointer;
 }
 
-.itemServico2:hover, .itemServico4:hover, .itemServico5:hover, .itemServico7:hover {
-  background: rgb(214, 224, 255);
+.itemServico2:hover,
+.itemServico4:hover,
+.itemServico5:hover,
+.itemServico7:hover {
+  background: rgb(226, 233, 255);
   cursor: pointer;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 h3 {
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-    background: rgb(238, 230, 255);
-    padding-top: 30px;
-    padding-bottom: 5px;
-    font-size: 15px;
-    text-transform: uppercase;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  background: rgb(238, 230, 255);
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
+.containerSobreMim {
+  display: flex;
+  background: rgb(255, 255, 255);
+  padding-bottom: 50px;
+}
+
+.containerSobreMim .left {
+  margin-right: 190px;
+  margin-left: 120px;
+  flex: 7;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+  line-height: 30px;
+}
+
+.containerSobreMim .right {
+  background: rgb(255, 255, 255);
+  flex: 3;
+  margin-right: 40px;
+}
+
+#sobremim h3 {
+  background: rgb(255, 255, 255);
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.socialMedia {
+  display: flex;
+}
+
+.socialMedia img {
+  width: 30px;
+}
+
+.socialMedia p {
+  margin-left: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.socialMedia p:hover {
+  color: rgb(68, 21, 185);
+}
+
+.socialMedia a {
+  text-decoration: none;
+}
+
+.containerSobreMim h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+#contato {
+  background: rgb(245, 224, 248);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+form {
+  font-size: 18px;
+  max-width: 500px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+input,
+textarea {
+  width: 200px;
+  padding: 10px;
+  color: black;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+}
+
+.displayContato {
+  display: flex;
+}
+
+form h2 {
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mensagem {
+  margin-left: 60px;
+}
+
+textarea {
+  resize: none;
+  width: 400px;
+  height: 123px;
+}
+
+.mensagem input {
+  width: 150px;
+  font-size: 16px;
+  background: rgb(188, 90, 198);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.mensagem input:hover {
+  background: rgb(68, 21, 185);
+}
+
+.mapa {
+  margin-left: 90px;
+}
+
+iframe {
+  border-radius: 5px;
+  margin-top: -30px;
+}
+
+.menuDegrade {
+  background: linear-gradient(
+    90deg,
+    rgba(117, 41, 165, 1) 0%,
+    rgba(8, 0, 43, 1) 76%
+  );
+  justify-content: center;
+  
+}
+
+.container-fluid {
+  background: linear-gradient(
+    90deg,
+    rgba(117, 41, 165, 1) 0%,
+    rgba(8, 0, 43, 1) 76%
+  );
+  margin-top: -8px;
+}
 
