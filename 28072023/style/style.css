@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-/*#menu { 
-  display: flex;
-  list-style: none;
-  padding: 25px;
-  justify-content: center;
-  margin-bottom: 25px;
-}*/
-
 #menu a {
   color: rgb(255, 255, 255);
   font-family: "Nunito Sans", sans-serif;
@@ -281,14 +273,13 @@ iframe {
   margin-top: -30px;
 }
 
-.menuDegrade {
+.navColor {
   background: linear-gradient(
     90deg,
     rgba(117, 41, 165, 1) 0%,
     rgba(8, 0, 43, 1) 76%
   );
   justify-content: center;
-  
 }
 
 .container-fluid {
@@ -298,5 +289,14 @@ iframe {
     rgba(8, 0, 43, 1) 76%
   );
   margin-top: -8px;
+  margin-bottom: -8px;
 }
 
+.navbar-toggler {
+  border: 1px solid transparent;
+  margin: 7px;
+}
+
+.navbar {
+  --bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
